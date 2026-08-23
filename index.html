@@ -1,76 +1,174 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
-<HTML>
-<HEAD>
-   <TITLE>Oleg Starykh's home page</TITLE>
-</HEAD>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<CENTER>
-<TABLE WIDTH="85%" BORDER="0" CELLSPACING="15" CELLPADDING="0">
- <TR>
-   <TD COLSPAN=2>
-   <FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,Swiss,SunSans-Regular">
-<CENTER>
- <H1><FONT COLOR="#330099">Oleg Starykh</FONT></H1>
-</CENTER><BR>
+  <title>Oleg Starykh's Home Page</title>
 
-</TD>
-</TR>
+  <style>
+    body {
+      font-family: "Lucida Grande", Geneva, Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: white;
+      color: black;
+    }
 
+    .page {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-<TR VALIGN=TOP>
-	<TD WIDTH=60%>
-	
-	
-<blockquote>
-Professor<br>
-Department of Physics and Astronomy<br>
-University of Utah <br>
-Salt Lake City, UT 84112<br>
-<p>
+    h1 {
+      color: #330099;
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
- Office:  W 2220 <br>
-Email: <b> oleg.starykh <FONT COLOR="#FF0000" FACE="arial">at</FONT> utah.edu </b><br>
-<p>
+    .main-content {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
 
+    .text-column {
+      flex: 3;
+    }
 
-<FONT SIZE="2" FACE="Lucida Grande,Geneva,Arial,Helvetica,Swiss,SunSans-Regular">
-I am a condensed matter theorist. I am studying frustrated quantum magnets and 
-strongly correlated electron systems, quantum phases and phase transitions between them, 
-	as well as various ways to probe quantum dynamical correlation functions.
-<BR><BR>
+    .image-column {
+      flex: 2;
+      text-align: center;
+    }
 
-	<div style="text-align: center;">
+    .image-column img {
+      width: 360px;
+      max-width: 100%;
+      height: auto;
+    }
 
-  <h3>
-    <a href="teaching/index.html">Teaching</a>: course pages and materials
-  </h3>
+    .bio {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-top: 30px;
+    }
 
-  <h3>
-    <a href="research/research.html">Research</a>: recent talks and publications
-  </h3>
+    .email-at {
+      color: #ff0000;
+      font-family: Arial, sans-serif;
+    }
 
-  <h3>
-    <a href="http://scholar.google.com/citations?user=1yW1cZcAAAAJ">Google Scholar page</a>
-  </h3>
+    .links-container {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-  <h3>
-    <a href="https://www.physics.utah.edu/utah-physics-circle/">Utah Physics Circle</a> for high school students
-  </h3>
+    .links {
+      display: inline-block;
+      text-align: left;
+    }
 
-</div>
-<center>
-</TD>
+    .links h3 {
+      margin: 18px 0;
+    }
 
+    /* Makes the page adapt to phones and narrow screens */
+    @media (max-width: 750px) {
+      .page {
+        width: 95%;
+      }
 
-<TD WIDTH=40%>
-<IMG SRC="wildhorse2015.jpg" ALT="Powered by Apache" width="360" height="490"><BR> </center><BR>
-</TD>
+      .main-content {
+        flex-direction: column;
+      }
 
+      .text-column,
+      .image-column {
+        width: 100%;
+      }
 
-</TR>
-</TABLE>
-</CENTER>
+      .links-container {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
 
-</BODY>
-</HTML>
+<body>
+
+  <div class="page">
+
+    <h1>Oleg Starykh</h1>
+
+    <div class="main-content">
+
+      <div class="text-column">
+
+        <p>
+          Professor<br>
+          Department of Physics and Astronomy<br>
+          University of Utah<br>
+          Salt Lake City, UT 84112
+        </p>
+
+        <p>
+          Office: W 2220<br>
+          Email:
+          <strong>
+            oleg.starykh
+            <span class="email-at">at</span>
+            utah.edu
+          </strong>
+        </p>
+
+        <div class="bio">
+          I am a condensed matter theorist. I am studying frustrated quantum
+          magnets and strongly correlated electron systems, quantum phases
+          and phase transitions between them, as well as various ways to
+          probe quantum dynamical correlation functions.
+        </div>
+
+        <div class="links-container">
+          <div class="links">
+
+            <h3>
+              <a href="teaching/index.html">Teaching</a>:
+              course pages and materials
+            </h3>
+
+            <h3>
+              <a href="research/research.html">Research</a>:
+              recent talks and publications
+            </h3>
+
+            <h3>
+              <a href="https://scholar.google.com/citations?user=1yW1cZcAAAAJ">
+                Google Scholar page
+              </a>
+            </h3>
+
+            <h3>
+              <a href="https://www.physics.utah.edu/utah-physics-circle/">
+                Utah Physics Circle
+              </a>
+              for high school students
+            </h3>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="image-column">
+        <img src="wildhorse2015.jpg"
+             alt="Oleg Starykh">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
